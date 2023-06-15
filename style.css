@@ -1,0 +1,96 @@
+
+.coin {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  
+  .coin img {
+    position: absolute;
+    width: 18rem;
+}
+
+.tally {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 5px; 
+  }
+.tally div {
+    border: 5px solid #ffffff;
+    padding: 20px;
+    width: 20% ;
+    text-align: center;
+    font-family: "Droid Sans", "Droid Arabic Kufi", Tahoma, Arial, sans-serif;
+    color: white;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    margin-top: 19rem;
+  }
+.result div {
+    text-align: center;
+    font-family: "Droid Sans", "Droid Arabic Kufi", Tahoma, Arial, sans-serif;
+    color: white;
+}
+
+
+.top {
+	animation-name: toss;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: .1s;
+	animation-direction: alternate;
+}
+.bottom {
+	animation-name: toss2;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: .1s;
+	animation-direction: alternate;
+}
+
+
+@keyframes toss {
+	0% {
+		transform: rotateX(0deg);
+ 
+	}
+	50% {
+		transform: rotateX(180deg);
+        z-index: -100;
+	}
+	100% {
+		transform: rotateX(360deg);
+	}
+}
+
+@keyframes toss2{
+	0% {
+		transform: rotateX(0deg);
+	}
+	50% {
+		transform: rotateX(180deg);
+	}
+	100% {
+		transform: rotateX(360deg);
+	}
+}
+
+
+body {background-color: #006C35;}
+
+h1 {color: white;
+font-family: "Droid Sans", "Droid Arabic Kufi", Tahoma, Arial, sans-serif;
+text-align: center;
+font-size: 2rem;
+}
+
+h2 {color: white;
+    font-family: "Droid Sans", "Droid Arabic Kufi", Tahoma, Arial, sans-serif;
+    text-align: center;
+    font-size: 1.2rem;
+    } 
